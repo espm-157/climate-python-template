@@ -10,19 +10,19 @@
 
 ## 🎓 Learning Objectives
 
-:octocat: Use of GitHub
-:snake: Use of Jupyter Notebooks
-:abcd: Accessing tabular data
-📈 Data visualization
-🔍 Verifying code you did not write
-🗄 Working with data larger than memory
-🌡️ Become familiar with data on global climate change
+:octocat: Use of GitHub  
+:snake: Use of Jupyter Notebooks  
+:abcd: Accessing tabular data  
+📈 Data visualization  
+🔍 Verifying code you did not write  
+🗄 Working with data larger than memory  
+🌡️ Become familiar with data on global climate change  
 
 ## 📖 Content Overview
 
-[💻 Assignment template](climate.ipynb)
-[💯 Assignment rubric](rubric.md)
-[📊 Session 2 benchmarking exercise](benchmark.md)
+[💻 Assignment template](climate.ipynb)  
+[💯 Assignment rubric](rubric.md)  
+[📊 Session 2 benchmarking exercise](benchmark.md)  
 
 Individuals or teams will work through and adapt the questions presented in the climate
 notebook to reproduce key indicators of climate change, similar to NASA's
@@ -43,6 +43,9 @@ always had to answer about code they did not write:
 
 > How do I know these numbers are right?
 
+We work in plan mode throughout this module: you review and approve what the model
+proposes before it runs.
+
 ## Data sources
 
 - NOAA Mauna Loa CO2 record — <https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.txt>
@@ -51,29 +54,14 @@ always had to answer about code they did not write:
 - Our World in Data CO2 — <https://github.com/owid/co2-data>
 - Vostok ice core — <https://doi.org/10.3334/CDIAC/ATG.009>
 
-## Language models
-
-We use open-weight models hosted by the [National Research Platform](https://nrp.ai).
-Register your own account and generate a token at <https://nrp.ai/llmtoken>, then set:
-
-```bash
-export OPENAI_BASE_URL="https://ellm.nrp-nautilus.io/v1"
-export OPENAI_API_KEY="your-nrp-token"
-export OPENAI_MODEL="deepseek-v4-flash"
-```
-
-Reading the endpoint from the environment rather than hardcoding it is deliberate. These
-are OpenAI-compatible APIs, so the same code runs against a different provider by changing
-these three values and nothing else. That portability is a property of open infrastructure,
-and it is worth noticing that closed systems generally do not offer it.
-
-**We work in plan mode this module.** You review and approve what the model proposes before
-it runs. Autonomous modes come later in the course.
-
 ## Setup
 
-- Use the [github-login.ipynb](github-login.ipynb) notebook in JupyterLab to authenticate each session with GitHub.  This provides a short-lived and appropriately scoped token for secure access using `gh-scoped-creds`.
-- We use GitHub Actions to run automated reproducibility checks, click the badge up top for details.
+Environment setup, GitHub authentication, and language model configuration are covered on
+the [course website](https://espm-157.carlboettiger.info/) rather than here, since those
+mechanics are shared across all four modules and change faster than the assignments do.
+
+We use GitHub Actions to run automated reproducibility checks — click the badge up top for
+details.
 
 ## Links
 
