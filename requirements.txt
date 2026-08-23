@@ -4,3 +4,4 @@ ibis-framework[duckdb]
 nbval
 plotnine
 pytest
+pyarrow
