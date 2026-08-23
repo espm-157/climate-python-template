@@ -32,16 +32,22 @@ using the most recent observations and most extensive ice core data.  Along the 
 will encounter many other datasets and learn about wrangling the diverse conventions in
 tabular data.
 
-This year the module has a second thread running through it. You have a language model
-that will write the parsing code for you, and it is good at it. It is also wrong in
-specific, recurring ways that produce code which runs cleanly and gives the wrong answer.
-Each part of the notebook pairs a climate data set with one of those failure modes:
-mislabeled columns, sentinel values read as real measurements, one file loaded out of
-twelve, a variable chosen by string match rather than by meaning, and a default library
-that cannot handle the size of the data. The recurring question is the one scientists have
-always had to answer about code they did not write:
+A second thread runs through the module. You have a language model that will write the
+parsing code for you, and it is good at it. It is also wrong in specific, recurring ways
+that produce code which runs cleanly and gives the wrong answer. Each part of the notebook
+pairs a climate data set with one of those failure modes: mislabeled columns, sentinel
+values read as real measurements, one file loaded out of twelve, a variable chosen by
+string match rather than by meaning, and a default library that cannot handle the size of
+the data. The recurring question is the one scientists have always had to answer about
+code they did not write:
 
 > How do I know these numbers are right?
+
+Every previous advance that made computing dramatically easier — screens over punchcards,
+compilers over assembly, Python over C — led to more programming by more people, not less.
+Efficiency gets spent on attempting more. That is why this module does not ask you to
+memorize library syntax, and equally why it cannot be completed by pasting the assignment
+into a model and typing "go". The work moves up a level rather than disappearing.
 
 We work in plan mode throughout this module: you review and approve what the model
 proposes before it runs.
