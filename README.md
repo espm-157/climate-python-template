@@ -35,11 +35,9 @@ tabular data.
 A second thread runs through the module. You have a language model that will write the
 parsing code for you, and it is good at it. It is also wrong in specific, recurring ways
 that produce code which runs cleanly and gives the wrong answer. Each part of the notebook
-pairs a climate data set with one of those failure modes: mislabeled columns, sentinel
-values read as real measurements, one file loaded out of twelve, a variable chosen by
-string match rather than by meaning, and a default library that cannot handle the size of
-the data. The recurring question is the one scientists have always had to answer about
-code they did not write:
+pairs a climate data set with one of those failure modes. The notebook does not tell you
+which; finding out is the assignment. The recurring question is the one scientists have
+always had to answer about code they did not write:
 
 > How do I know these numbers are right?
 
